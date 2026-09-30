@@ -10,7 +10,7 @@ public class MusicOrganizer
 {
     // An ArrayList for storing the file names of music files.
     private ArrayList<String> files;
-        
+  
     /**
      * Create a MusicOrganizer
      */
@@ -57,6 +57,18 @@ public class MusicOrganizer
     {
         if(index >= 0 && index < files.size()) {
             files.remove(index);
+        }
+    }
+    
+    /**
+     * question 1
+     */
+    public void checkIndex(int index)
+    {
+        if (index >=0 && index <= files.size()-1) {
+        }
+        else {
+            System.out.println("ERROR : valid index range = 0 to " + (files.size()-1));
         }
     }
 }
